@@ -1,0 +1,32 @@
+CACHE MANIFEST 
+# v1.2
+
+BinLoader/index.html
+BinLoader/int64.js
+BinLoader/ps4.js
+BinLoader/rop.js
+BinLoader/userland.js
+BinLoader/utils.js
+702.js
+app2usb.js
+c-code.js
+dbackup.js
+dbrestore.js
+disable-updates.js
+dumper.js
+enable-updates.js
+ftp.js
+img.jpg
+index.html
+int64.js
+jb.js
+linux702.js
+linux702-3gb.js
+mira.js
+mira2.js
+payload702.html
+ps4.js
+ps4debug.js
+ps4-hen-vtx-702.js
+todex.js
+utils.js
