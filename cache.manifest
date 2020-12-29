@@ -7,6 +7,13 @@ BinLoader/ps4.js
 BinLoader/rop.js
 BinLoader/userland.js
 BinLoader/utils.js
+PS4Debug/index.html
+PS4Debug/int64.js
+PS4Debug/ps4.js
+PS4Debug/ps4debug.js
+PS4Debug/rop.js
+PS4Debug/userland.js
+PS4Debug/utils.js
 702.js
 app2usb.js
 c-code.js
