@@ -1,5 +1,5 @@
 CACHE MANIFEST 
-# v1.2
+# v1.3
 
 BinLoader/index.html
 BinLoader/int64.js
@@ -16,22 +16,38 @@ PS4Debug/userland.js
 PS4Debug/utils.js
 702.js
 app2usb.js
+arabic-guy100.js
+arabic-guy127.js
+arabic-guy132.js
 c-code.js
 dbackup.js
 dbrestore.js
 disable-updates.js
 dumper.js
 enable-updates.js
+enable-vr.js
+fan-threshold50.js
+fan-threshold55.js
+fan-threshold60.js
+fan-threshold65.js
+fan-threshold70.js
+fan-threshold75.js
 ftp.js
+gtav-mods.html
 img.jpg
 index.html
 int64.js
 jb.js
-linux702.js
+linux.html
+linux702-1gb.js
+linux702-2gb.js
 linux702-3gb.js
 mira.js
 mira2.js
 mugimirahen.js
+native-caller100.js
+native-caller127.js
+native-caller132.js
 payload702.html
 ps4.js
 ps4-hen-vtx-702.js

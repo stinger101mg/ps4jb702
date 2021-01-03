@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html manifest="cache.manifest"><head>
-<title>PS4 7.02 Host v1.2 by GamerHack</title>
+<title>PS4 7.02 Host v1.3 by GamerHack</title>
 <style>
 html, body {
 background-image: url('img.jpg');
+background-color: #305fa5;
 color:white;
 height: 754px;
 margin-top: 0px;
@@ -49,12 +50,12 @@ background-color: #0058b1;
 color: white;
     border-radius: 8px;
 }
-.btn-beta {
+.btn-secondary {
 background-color: #b10000;
 color: white;
 border-radius: 8px;
 }
-.btn-beta:hover {
+.btn-secondary:hover {
 background-color: #f31414;
 color: white;
 border-radius: 8px;
@@ -66,37 +67,104 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cac
 document.cookie = 'kex=1';
 </script>
 </head>
-<h1 id=msgs>PS4 7.02 Host v1.2 by GamerHack</h1>
+<h1 id=msgs>PS4 7.02 Host v1.3 by GamerHack</h1>
 <hr>
 <br>
-<h1 style="font-size:20px;text-align:center;color:yellow;">When Selecting Any Tool, You Will Experience Insufficient Memory Problems in Browser (You Must Insist)</h1>
+<h1 style="font-size:20px;text-align:center;color:yellow;">You Will Experience Insufficient Memory Problems in Browser (You Must Insist)</h1>
 <div style="text-align:center">
-<button class="btn btn-main" onclick=load_hen()> HEN v2.1.3 </button>
-<button class="btn btn-main" onclick=load_mira()> MIRA </button>
-<button class="btn btn-beta" onclick=load_mirahen()> MIRA-HEN </button>
+<button class="btn btn-main" onmouseover="mainpayload1()" onmouseout="pagetitle()" onclick=load_hen()> HEN v2.1.3 </button>
+<button class="btn btn-main" onmouseover="mainpayload2()" onmouseout="pagetitle()" onclick=load_mira()> MIRA </button>
+<button class="btn btn-secondary" onmouseover="mainpayload3()" onmouseout="pagetitle()" onclick=load_mirahen()> MIRA-HEN </button>
 <br><br>
 <h1 style="font-size:20px;text-align:center;">Payloads</h1>
-<button class="btn btn-beta" onclick=load_todex()> ToDex </button>
-<button class="btn btn-main" onclick=load_dumper()> Dumper </button>
-<button class="btn btn-main" onclick=load_ftp()> FTP </button>
+<button class="btn btn-secondary" onmouseover="todex()" onmouseout="pagetitle()" onclick=load_todex()> ToDex </button>
+<button class="btn btn-main" onmouseover="dumper()" onmouseout="pagetitle()" onclick=load_dumper()> Dumper </button>
+<button class="btn btn-main" onmouseover="ftp()" onmouseout="pagetitle()" onclick=load_ftp()> FTP </button>
 <br>
-<button class="btn btn-main" onclick=load_enbupd()> Enable Updates </button>
-<button class="btn btn-main" onclick=load_disupd()> Disable Updates </button>
-<button class="btn btn-main" onclick=load_app2usb()> App2USB </button>
+<button class="btn btn-main" onmouseover="enableupdate()" onmouseout="pagetitle()" onclick=load_enablebupdate()> Enable Updates </button>
+<button class="btn btn-main" onmouseover="disableupdate()" onmouseout="pagetitle()" onclick=load_disableupdate()> Disable Updates </button>
+<button class="btn btn-main" onmouseover="app2usb()" onmouseout="pagetitle()" onclick=load_app2usb()> App2USB </button>
 <br>
-<button class="btn btn-main" onclick=load_dbackup()> DB Backup </button>
-<button class="btn btn-main" onclick=load_dbrestore()> DB Restore </button>
-<button class="btn btn-main" onclick=load_ps4debug()> PS4 Debug </button>
+<button class="btn btn-main" onmouseover="dbackup()" onmouseout="pagetitle()" onclick=load_dbackup()> DB Backup </button>
+<button class="btn btn-main" onmouseover="dbrestore()" onmouseout="pagetitle()" onclick=load_dbrestore()> DB Restore </button>
+<button class="btn btn-main" onmouseover="ps4debug()" onmouseout="pagetitle()" onclick=load_ps4debug()> PS4 Debug </button>
 <br>
-<button class="btn btn-main" onclick=load_linux1gb()> Linux 1GB </button>
-<button class="btn btn-main" onclick=load_linux3gb()> Linux 3GB </button>
-<button class="btn btn-main" onclick=load_binloader()> Bin Loader </button>
-<br><br><br><br><br>
-<hr style="margin-top: 27px;">
-<h1 style="font-size:25px;text-align:center;margin-top: 15px;color:yellow;">Many Thanks to:&nbsp&nbsp<a href="https://twitter.com/sleirsgoevy" style="color:red;">@sleirsgoevy</a>&nbsp&nbspChendoChap&nbsp&nbsp<a href="https://twitter.com/salt13939424" style="color:red;">@salt13939424</a>&nbsp&nbsp<a href="https://twitter.com/84Ciss" style="color:red;">@84Ciss</a>&nbsp&nbspAnd To All People Who Keep The Scene Alive ...</h1>
+<button class="btn btn-main" onmouseover="linux()" onmouseout="pagetitle()" onclick=load_linux()> Linux Loader </button>
+<button class="btn btn-main" onmouseover="gtavmods()" onmouseout="pagetitle()" onclick=load_gtavmods()> GTA V Mods </button>
+<button class="btn btn-main" onmouseover="binloader()" onmouseout="pagetitle()" onclick=load_binloader()> Bin Loader </button>
+<br>
+<button class="btn btn-main" onmouseover="enablevr()" onmouseout="pagetitle()" onclick=load_enablevr()> Enable VR </button>
+<button class="btn btn-main" onmouseover="fanthreshold()" onmouseout="pagetitle()"  style="margin-right:8px" onclick=load_fanthreshold()> Fan Threshold (Beta) </button><select id="tempC"></select>&#176;C&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<br><br>
+<hr style="margin-top: 24px;">
+<h1 style="font-size:25px;text-align:center;margin-top: 15px;color:yellow;">Many Thanks to:&nbsp&nbsp<a href="https://twitter.com/sleirsgoevy" style="color:#f31414;">@sleirsgoevy</a>&nbsp&nbsp<a style="color:white;"></style>ChendoChap</a>&nbsp&nbsp<a href="https://twitter.com/NazkyYT" style="color:#f31414;">@NazkyYT</a>&nbsp&nbsp<a href="https://twitter.com/salt13939424" style="color:#f31414;">@salt13939424</a>&nbsp&nbsp<a href="https://twitter.com/84Ciss" style="color:#f31414;">@84Ciss</a>&nbsp&nbsp<a href="https://twitter.com/mohammad_fadel1" style="color:#f31414;">@mohammad_fadel1</a>&nbsp&nbsp</h1>
 <br>
 </div>
 <script>
+function mainpayload1(){
+document.getElementById("msgs").innerHTML = "PS4 HEN v2.1.3 for Firmware 7.02";
+}
+function mainpayload2(){
+document.getElementById("msgs").innerHTML = "PS4 MIRA for Firmware 7.02";
+}
+function mainpayload3(){
+document.getElementById("msgs").innerHTML = "Temporary Fix for PS4 with Error CE-30391-6";
+}
+function todex(){
+document.getElementById("msgs").innerHTML = "Enable Some Debugging Functions Available on TestKit";
+}
+function dumper(){
+document.getElementById("msgs").innerHTML = "Dump your Games (Necessary a USB Drive in exFAT)";
+}
+function ftp(){
+document.getElementById("msgs").innerHTML = "Access this console Through FTP (Be careful what you do)";
+}
+function enableupdate(){
+document.getElementById("msgs").innerHTML = "Enable System Updates";
+}
+function disableupdate(){
+document.getElementById("msgs").innerHTML = "Disable System Updates";
+}
+function app2usb(){
+document.getElementById("msgs").innerHTML = "Transfer Games / Apps to USB Drive in exFAT";
+}
+function dbackup(){
+document.getElementById("msgs").innerHTML = "Creates a Backup of the Console Database and Your User on a USB Drive";
+}
+function dbrestore(){
+document.getElementById("msgs").innerHTML = "Restore Database Backup from USB Drive";
+}
+function ps4debug(){
+document.getElementById("msgs").innerHTML = "Activate Your User Account Offline";
+}
+function linux(){
+document.getElementById("msgs").innerHTML = "Load Linux from a USB Drive (Click Here to Load Subpage)";
+}
+function gtavmods(){
+document.getElementById("msgs").innerHTML = "Choose Desired Cheats for GTA V (Click Here to Load Subpage)";
+}
+function binloader(){
+document.getElementById("msgs").innerHTML = "Inject a Payload Using the IP of the console and Port 9020";
+}
+function enablevr(){
+document.getElementById("msgs").innerHTML = "Enable PSVR (You must start HEN or MIRA before)";
+}
+function fanthreshold(){
+document.getElementById("msgs").innerHTML = "Modify PS4 Fan Speed";
+}
+function pagetitle(){
+document.getElementById("msgs").innerHTML = "PS4 7.02 Host v1.3 by GamerHack";
+}
+
+for(var i=50; i<=75; i=i+5){
+    var select = document.getElementById("tempC");
+    var option = document.createElement("OPTION");
+	select.options.add(option);
+	option.text = i;
+	option.value = i;
+}
+tempC.value=60;
+
 function load_hen(){
 
   var link = document.createElement('a');
@@ -139,14 +207,14 @@ function load_ftp(){
         link.href = 'payload702.html#f=ftp.js';
         link.click();
 }
-function load_enbupd(){
+function load_enablebupdate(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'payload702.html#f=enable-updates.js';
         link.click();
 }
-function load_disupd(){
+function load_disableupdate(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
@@ -181,6 +249,20 @@ function load_dbrestore(){
         link.href = 'payload702.html#f=dbrestore.js';
         link.click();
 }
+function load_linux(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'linux.html';
+        link.click();
+}
+function load_gtavmods(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'gtav-mods.html';
+        link.click();
+}
 function load_binloader(){
 
   var link = document.createElement('a');
@@ -188,20 +270,15 @@ function load_binloader(){
         link.href = 'BinLoader/index.html';
         link.click();
 }
-function load_linux1gb(){
+function load_enablevr(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload702.html#f=linux702.js';
+        link.href = 'payload702.html#f=enable-vr.js';
         link.click();
 }
-function load_linux3gb(){
 
-  var link = document.createElement('a');
-        document.body.appendChild(link);
-        link.href = 'payload702.html#f=linux702-3gb.js';
-        link.click();
-}
+function load_fanthreshold(){window.location.replace("payload702.html#f=fan-threshold"+tempC.value+".js");}
 </script>
 </body>
 </html>
