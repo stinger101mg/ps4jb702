@@ -277,8 +277,13 @@ function load_enablevr(){
         link.href = 'payload702.html#f=enable-vr.js';
         link.click();
 }
+function load_fanthreshold(){
 
-function load_fanthreshold(){window.location.replace("payload702.html#f=fan-threshold"+tempC.value+".js");}
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = ("payload702.html#f=fan-threshold"+tempC.value+".js");
+        link.click();
+}
 </script>
 </body>
 </html>
