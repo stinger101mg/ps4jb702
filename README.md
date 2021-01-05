@@ -1,6 +1,6 @@
 # PS4jb702
 
-PS4 Jailbreak for Firmware 7.02
+PS4 Jailbreak for The Firmware 7.02
 
 ## Steps
 
