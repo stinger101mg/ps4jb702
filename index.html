@@ -92,10 +92,11 @@ document.cookie = 'kex=1';
 <br>
 <button class="btn btn-main" onmouseover="linux()" onmouseout="pagetitle()" onclick=load_linux()> Linux Loader </button>
 <button class="btn btn-main" onmouseover="gtavmods()" onmouseout="pagetitle()" onclick=load_gtavmods()> GTA V Mods </button>
+<button class="btn btn-main" onmouseover="ps4trainer()" onmouseout="pagetitle()" onclick=load_ps4trainer()> PS4 Trainer (Beta) </button>
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <button class="btn btn-main" onmouseover="binloader()" onmouseout="pagetitle()" onclick=load_binloader()> Bin Loader </button>
-<br>
 <button class="btn btn-main" onmouseover="enablevr()" onmouseout="pagetitle()" onclick=load_enablevr()> Enable VR </button>
-<button class="btn btn-main" onmouseover="fanthreshold()" onmouseout="pagetitle()"  style="margin-right:8px" onclick=load_fanthreshold()> Fan Threshold (Beta) </button><select id="tempC"></select>&#176;C&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<button class="btn btn-main" onmouseover="fanthreshold()" onmouseout="pagetitle()"  style="margin-right:10px" onclick=load_fanthreshold()> Fan Threshold (Beta) </button><select id="tempC"></select>&#176;C
 <br><br>
 <hr style="margin-top: 24px;">
 <h1 style="font-size:25px;text-align:center;margin-top: 15px;color:yellow;">Many Thanks to:&nbsp&nbsp<a href="https://twitter.com/sleirsgoevy" style="color:#f31414;">@sleirsgoevy</a>&nbsp&nbsp<a style="color:white;"></style>ChendoChap</a>&nbsp&nbsp<a href="https://twitter.com/NazkyYT" style="color:#f31414;">@NazkyYT</a>&nbsp&nbsp<a href="https://twitter.com/salt13939424" style="color:#f31414;">@salt13939424</a>&nbsp&nbsp<a href="https://twitter.com/84Ciss" style="color:#f31414;">@84Ciss</a>&nbsp&nbsp<a href="https://twitter.com/mohammad_fadel1" style="color:#f31414;">@mohammad_fadel1</a>&nbsp&nbsp</h1>
@@ -143,6 +144,9 @@ document.getElementById("msgs").innerHTML = "Load Linux from a USB Drive (Click 
 }
 function gtavmods(){
 document.getElementById("msgs").innerHTML = "Choose Desired Cheats for GTA V (Click Here to Load Subpage)";
+}
+function ps4trainer(){
+document.getElementById("msgs").innerHTML = "Enable Cheats for Your Games (Click Here to Load Subpage)";
 }
 function binloader(){
 document.getElementById("msgs").innerHTML = "Inject a Payload Using the IP of the console and Port 9020";
@@ -262,6 +266,13 @@ function load_gtavmods(){
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'gtav-mods.html';
+        link.click();
+}
+function load_ps4trainer(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'webrte.html';
         link.click();
 }
 function load_binloader(){

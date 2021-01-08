@@ -14,6 +14,13 @@ PS4Debug/ps4debug.js
 PS4Debug/rop.js
 PS4Debug/userland.js
 PS4Debug/utils.js
+WebRTE/index.html
+WebRTE/int64.js
+WebRTE/ps4.js
+WebRTE/rop.js
+WebRTE/userland.js
+WebRTE/utils.js
+WebRTE/webrte.js
 702.js
 app2usb.js
 arabic-guy100.js
@@ -53,3 +60,4 @@ ps4.js
 ps4-hen-vtx-702.js
 todex.js
 utils.js
+webrte.html
