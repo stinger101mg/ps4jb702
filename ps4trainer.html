@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-<title>PS4 7.02 Host v1.3 by GamerHack - Linux VRAM Loader</title>
+<title>PS4 7.02 Host v1.3 by GamerHack - PS4 Trainer</title>
 <style>
 html, body {
 background-image: url('img.jpg');
@@ -65,14 +65,13 @@ border-radius: 8px;
 document.cookie = 'kex=1';
 </script>
 </head>
-<h1 id=msgs>PS4 7.02 Host v1.3 by GamerHack - Linux VRAM Loader</h1>
+<h1 id=msgs>PS4 7.02 Host v1.3 by GamerHack - PS4 Trainer</h1>
 <hr>
 <br>
 <h1 style="font-size:20px;text-align:center;color:yellow;">You Will Experience Insufficient Memory Problems in Browser (You Must Insist)</h1>
 <div style="text-align:center">
-<button class="btn btn-main" onmouseover="linux1gb()" onmouseout="pagetitle()" onclick=load_linux1gb()> Linux 1GB </button>
-<button class="btn btn-main" onmouseover="linux2gb()" onmouseout="pagetitle()" onclick=load_linux2gb()> Linux 2GB </button>
-<button class="btn btn-main" onmouseover="linux3gb()" onmouseout="pagetitle()" onclick=load_linux3gb()> Linux 3GB </button>
+<button class="btn btn-main" onmouseover="webrte()" onmouseout="pagetitle()" onclick=load_webrte()> WebRTE (Beta) </button>
+<button class="btn btn-main" onmouseover="trainer()" onmouseout="pagetitle()" onclick=load_trainer()> PS4 Trainer Web </button>
 <button class="btn btn-home" onmouseover="home()" onmouseout="pagetitle()" onclick=load_home()> Home </button>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <hr style="margin-top: 24px;">
@@ -80,43 +79,32 @@ document.cookie = 'kex=1';
 <br>
 </div>
 <script>
-function linux1gb(){
-document.getElementById("msgs").innerHTML = "Load Linux From USB Drive with 1GB VRAM";
+function webrte(){
+document.getElementById("msgs").innerHTML = "Required to Activate Cheats Through the PS4 Trainer Website";
 }
-function linux2gb(){
-document.getElementById("msgs").innerHTML = "Load Linux From USB Drive with 2GB VRAM";
-}
-function linux3gb(){
-document.getElementById("msgs").innerHTML = "Load Linux From USB Drive with 3GB VRAM";
+function trainer(){
+document.getElementById("msgs").innerHTML = "Link to PS4 Trainer Website (Follow Instructions There)";
 }
 function home(){
 document.getElementById("msgs").innerHTML = "Return to Main Page";
 }
 function pagetitle(){
-document.getElementById("msgs").innerHTML = "PS4 7.02 Host v1.3 by GamerHack - Linux VRAM Loader";
+document.getElementById("msgs").innerHTML = "PS4 7.02 Host v1.3 by GamerHack - PS4 Trainer";
 }
 
-function load_linux1gb(){
+function load_webrte(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload702.html#f=linux702-1gb.js';
+        link.href = 'WebRTE/index.html';
 		link.target = 'blank';
         link.click();
 }
-function load_linux2gb(){
+function load_trainer(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload702.html#f=linux702-2gb.js';
-		link.target = 'blank';
-        link.click();
-}
-function load_linux3gb(){
-
-  var link = document.createElement('a');
-        document.body.appendChild(link);
-        link.href = 'payload702.html#f=linux702-3gb.js';
+        link.href = 'http://ps4trainer.com/Trainer/index.html';
 		link.target = 'blank';
         link.click();
 }
