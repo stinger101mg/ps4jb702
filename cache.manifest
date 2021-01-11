@@ -1,5 +1,5 @@
 CACHE MANIFEST 
-# v1.3
+# v1.4
 
 BinLoader/index.html
 BinLoader/int64.js
@@ -27,6 +27,7 @@ arabic-guy100.js
 arabic-guy127.js
 arabic-guy132.js
 c-code.js
+CE-30391-6_Fix.js
 dbackup.js
 dbrestore.js
 disable-updates.js
@@ -41,23 +42,19 @@ fan-threshold70.js
 fan-threshold75.js
 ftp.js
 gtav-mods.html
+history-blocker.js
 img.jpg
 index.html
 int64.js
 jb.js
-linux.html
+kernel-clock.js
 linux702-1gb.js
-linux702-2gb.js
 linux702-3gb.js
 mira.js
 mira2.js
 mugimirahen.js
-native-caller100.js
-native-caller127.js
-native-caller132.js
 payload702.html
 ps4.js
 ps4-hen-vtx-702.js
-ps4trainer.html
 todex.js
 utils.js
