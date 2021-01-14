@@ -64,8 +64,8 @@ document.cookie = 'kex=1';
 <h1 style="font-size:20px;text-align:center;color:yellow;">You Will Experience Insufficient Memory Problems in the Browser (You Must Insist)</h1>
 <div style="text-align:center">
 <button class="btn btn-main" onmouseover="mainpayload1()" onmouseout="pagetitle()" onclick=load_hen()> HEN v2.1.3 </button>
-<button class="btn btn-main" onmouseover="mainpayload2()" onmouseout="pagetitle()" onclick=load_mira()> MIRA </button>
-<button class="btn btn-main" onmouseover="mainpayload3()" onmouseout="pagetitle()" onclick=load_CE303916fix()> CE-30391-6 Fix </button>
+<button class="btn btn-main" onmouseover="mainpayload2()" onmouseout="pagetitle()" onclick=load_henb()> HEN v2.1.3b </button>
+<button class="btn btn-main" onmouseover="mainpayload3()" onmouseout="pagetitle()" onclick=load_mira()> MIRA </button>
 <button class="btn btn-main" onmouseover="mainpayload4()" onmouseout="pagetitle()" onclick=load_mirahen()> MIRA-HEN </button>
 <br><br>
 <h1 style="font-size:20px;text-align:center;">Payloads</h1>
@@ -88,11 +88,11 @@ document.cookie = 'kex=1';
 <button class="btn btn-main" onmouseover="ps4trainer()" onmouseout="pagetitle()" onclick=load_ps4trainer()> PS4 Trainer Web </button>
 <button class="btn btn-main" onmouseover="gtavmods()" onmouseout="pagetitle()" onclick=load_gtavmods()> GTA V Mods </button>
 <button class="btn btn-main" onmouseover="historyBlocker()" onmouseout="pagetitle()" onclick=load_historyBlocker()> History Blocker </button>
-<br>
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <button class="btn btn-main" onmouseover="ps4debug()" onmouseout="pagetitle()" onclick=load_ps4debug()> PS4 Debug </button>
 <button class="btn btn-main" onmouseover="kernelClock()" onmouseout="pagetitle()" onclick=load_kernelClock()> Kernel Clock </button>
-<button class="btn btn-main" onmouseover="fanthreshold()" onmouseout="pagetitle()"  style="margin-right:12px" onclick=load_fanthreshold()> Fan Threshold </button><select id="tempC"></select>&#176;C&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<br><br>
+<button class="btn btn-main" onmouseover="CE303916fix()" onmouseout="pagetitle()" onclick=load_CE303916fix()> CE-30391-6 Fix </button>
+<button class="btn btn-main" onmouseover="fanthreshold()" onmouseout="pagetitle()"  style="margin-right:10px" onclick=load_fanthreshold()> Fan Threshold </button><select id="tempC"></select>&#176;C<br><br>
 <hr style="margin-top: 24px;">
 <h1 style="font-size:25px;text-align:center;margin-top: 15px;color:yellow;">Many Thanks to:&nbsp&nbsp<a href="https://twitter.com/sleirsgoevy" style="color:#f31414;">@sleirsgoevy</a>&nbsp&nbsp<a style="color:white;"></style>ChendoChap</a>&nbsp&nbsp<a href="https://twitter.com/NazkyYT" style="color:#f31414;">@NazkyYT</a>&nbsp&nbsp<a href="https://twitter.com/salt13939424" style="color:#f31414;">@salt13939424</a>&nbsp&nbsp<a href="https://twitter.com/84Ciss" style="color:#f31414;">@84Ciss</a>&nbsp&nbsp<a href="https://twitter.com/mohammad_fadel1" style="color:#f31414;">@mohammad_fadel1</a>&nbsp&nbsp</h1>
 <br>
@@ -102,10 +102,10 @@ function mainpayload1(){
 document.getElementById("msgs").innerHTML = "HEN v2.1.3 for Firmware 7.02";
 }
 function mainpayload2(){
-document.getElementById("msgs").innerHTML = "MIRA for Firmware 7.02";
+document.getElementById("msgs").innerHTML = "HEN v2.1.3b for Firmware 7.02";
 }
 function mainpayload3(){
-document.getElementById("msgs").innerHTML = "Temporary Fix for PS4 with Error CE-30391-6";
+document.getElementById("msgs").innerHTML = "MIRA for Firmware 7.02";
 }
 function mainpayload4(){
 document.getElementById("msgs").innerHTML = "MIRA + ToDex (Includes Temporary Fix for CE-30391-6)";
@@ -164,6 +164,9 @@ document.getElementById("msgs").innerHTML = "Activate Your User Account Offline"
 function kernelClock(){
 document.getElementById("msgs").innerHTML = "Change the Time for the Console Kernel Clock";
 }
+function CE303916fix(){
+document.getElementById("msgs").innerHTML = "Temporary Fix for PS4 with Error CE-30391-6";
+}
 function fanthreshold(){
 document.getElementById("msgs").innerHTML = "Modify PS4 Fan Speed";
 }
@@ -184,7 +187,14 @@ function load_hen(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload702.html#f=ps4-hen-vtx-702.js';
+        link.href = 'payload702.html#f=hen213.js';
+        link.click();
+}
+function load_henb(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'hen213b/index.html';
         link.click();
 }
 function load_mira(){
@@ -192,13 +202,6 @@ function load_mira(){
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'payload702.html#f=mira2.js';
-        link.click();
-}
-function load_CE303916fix(){
-
-  var link = document.createElement('a');
-        document.body.appendChild(link);
-        link.href = 'payload702.html#f=CE-30391-6_Fix.js';
         link.click();
 }
 function load_mirahen(){
@@ -332,6 +335,13 @@ function load_kernelClock(){
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'payload702.html#f=kernel-clock.js';
+        link.click();
+}
+function load_CE303916fix(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload702.html#f=CE-30391-6_Fix.js';
         link.click();
 }
 function load_fanthreshold(){
