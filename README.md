@@ -4,7 +4,7 @@ PS4 Jailbreak for The Firmware 7.02
 
 ## Steps
 
-- Go to the following link https://gamerhack.github.io/ps4jb702/
+- In the PS4 Browser, Go to the following link https://gamerhack.github.io/ps4jb702/
 - Immediately All content will be installed in Cache, once finished exit the browser and turn off the internet.
 - Re-Open the Browser and select one of the Main Payloads (HEN / MIRA or MIRA-HEN) for the Jailbreak will be complete.
 
