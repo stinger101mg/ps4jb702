@@ -7,13 +7,6 @@ BinLoader/ps4.js
 BinLoader/rop.js
 BinLoader/userland.js
 BinLoader/utils.js
-hen213b/index.html
-hen213b/int64.js
-hen213b/ps4.js
-hen213b/hen213b.js
-hen213b/rop.js
-hen213b/userland.js
-hen213b/utils.js
 PS4Debug/index.html
 PS4Debug/int64.js
 PS4Debug/ps4.js
@@ -50,6 +43,7 @@ fan-threshold75.js
 ftp.js
 gtav-mods.html
 hen213.js
+hen-U.js
 history-blocker.js
 img.jpg
 index.html
